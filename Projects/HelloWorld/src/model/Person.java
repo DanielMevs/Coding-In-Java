@@ -39,4 +39,24 @@ public class Person {
     public void setSpouse(Person spouse) {
         this.spouse = spouse;
     }
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dob=" + dob +
+                ", address=" + address +
+                ", spouse=" + spouse +
+                ", pet=" + pet +
+                '}';
+    }
 }
