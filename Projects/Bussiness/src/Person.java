@@ -1,25 +1,31 @@
 import business.Company;
 
 public class Person {
-    private final double PI = 3.14;
-    private final String MY_BIG_CONSTANT = "Hi, this is my constant message";
-    private String firstName;
-    private int age;
-    private long id;
-    private char middleInitial;
-    private byte myByte;
-    static private Company company1 = new Company();
-    static private Company company2 = new Company();
-    private NewsAgency agency;
+    private String middleName = "Christopher";
 
-    public void myTestMethod() {
-        var age = 21;
-        var name = "Jake";
+    public void sayHello(){
+        System.out.println("Hello");
+    }
 
+    public void saySomething(String message) {
+        System.out.println(message);
+    }
+
+    public char getMiddleInitial() {
+        return middleName.charAt(0);
+    }
+
+    public int add(int num1, int num2) {
+        return num1 + num2;
     }
 
     public static void main(String[] args) {
-        System.out.println(company1);
-        System.out.println(company2);
+        Person p1 = new Person();
+        p1.sayHello();
+        p1.saySomething("My groovy message");
+        p1.saySomething("Here's somethinge else to say.");
+        char middleInitial = p1.getMiddleInitial();
+        System.out.println(middleInitial);
+        System.out.println(p1.add(5, 3));
     }
 }
