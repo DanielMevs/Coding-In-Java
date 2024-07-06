@@ -8,7 +8,25 @@ public class Person {
     public String lastName;
     protected LocalDate dob;
     public static double PI = 3.14;
+    public static int[] nums = initNums();
 
+    static {
+        nums = new int[5];
+        nums[0] = 3;
+        nums[1] = 3;
+        nums[2] = 3;
+        nums[3] = 3;
+
+    }
+
+    public static int[] initNums() {
+        int[] nums = new int[5];
+        nums[0] = 3;
+        nums[1] = 3;
+        nums[2] = 3;
+        nums[3] = 3;
+        return nums;
+    }
     public void sayHello(){
         System.out.println("Hello");
     }
