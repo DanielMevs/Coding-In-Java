@@ -30,4 +30,12 @@ public class Pet {
     public void setDob(LocalDate dob) {
         this.dob = dob;
     }
+
+    @Override
+    public String toString(){
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", dob" + dob +
+                '}';
+    }
 }
