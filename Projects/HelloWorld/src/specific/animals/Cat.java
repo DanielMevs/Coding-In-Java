@@ -1,6 +1,8 @@
-package model;
+package specific.animals;
 
-public class Cat extends Pet{
+import model.Pet;
+
+public class Cat extends Pet {
     public void meow() {
         System.out.println("Meow meow");
 
