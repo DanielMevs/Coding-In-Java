@@ -55,8 +55,9 @@ public class Person {
 
     public static void main(String[] args) {
         Person p1 = new Person();
-        p1.firstName = "Jake";
+        p1.firstName = "John";
         p1.lastName = "Smith";
+
         p1.sayHello();
         p1.saySomething("My groovy message");
         p1.saySomething("Here's somethinge else to say.");

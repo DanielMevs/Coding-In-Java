@@ -7,6 +7,7 @@ public class ClassA {
         ClassB classB = new ClassB();
         classB.publicMethod();
 //        classB.privateMethod();
+        classB.publicMethod();
 
 
 
