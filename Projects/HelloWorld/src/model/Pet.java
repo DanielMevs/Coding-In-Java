@@ -15,6 +15,14 @@ public class Pet {
         this.dob = dob;
     }
 
+    protected void protectedMethod() {
+        System.out.println("This is the protectedMethod of Pet");
+    }
+
+    void packageProtected() {
+        System.out.println("This is the packageProtected method of Pet");
+    }
+
     public String getName() {
         return name;
     }
@@ -29,5 +37,13 @@ public class Pet {
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
+    }
+
+    @Override
+    public String toString(){
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", dob" + dob +
+                '}';
     }
 }
